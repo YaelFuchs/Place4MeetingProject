@@ -1,0 +1,6 @@
+2024-09-29 13:52:55.338317+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table opening_hours (end_time time(6), start_time time(6), id bigint not null, place_id bigint, [*]day varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table opening_hours (end_time time(6), start_time time(6), id bigint not null, place_id bigint, day varchar(255), primary key (id)) [42001-224]
+2024-09-29 13:52:55.369951+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "OPENING_HOURS" not found; SQL statement:
+alter table if exists places add constraint FKan2m3qpx1m6yl3fja5al98ykv foreign key (opening_hours_id) references opening_hours [42102-224]
